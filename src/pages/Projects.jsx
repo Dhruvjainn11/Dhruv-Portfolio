@@ -13,7 +13,7 @@ const projects = [
       "🔌 Real-time updates using Socket.IO",
     ],
     tech: ["React", "Redux", "Node.js", "MongoDB", "Socket.IO", "TailwindCSS"],
-    github: "https://github.com/yourusername/dineflow",
+    github: "https://github.com/Dhruvjainn11/dineflow",
     live: "", // optional
   },
 ];
