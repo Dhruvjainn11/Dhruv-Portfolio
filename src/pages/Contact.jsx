@@ -153,7 +153,7 @@ const [statusType, setStatusType] = useState("success");  // "success" or "error
         </a>
 
         <a
-          href="/Dhruv_CV.pdf"
+          href="/CV.pdf"
           download
           className="flex items-center gap-2 hover:text-white transition-colors"
         >
