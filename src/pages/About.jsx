@@ -22,7 +22,10 @@ export default function About({ openFile, setActiveTab, openTabs }) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">Hey, I'm Dhruv 👋</h1>
+      {/* Intro */}
+      <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
+        Hey, I'm Dhruv 👋
+      </h1>
 
       <motion.section
         className="space-y-3 mt-6"
@@ -31,14 +34,15 @@ export default function About({ openFile, setActiveTab, openTabs }) {
         transition={{ duration: 0.6, delay: 0.1 }}
       >
         <p className="text-base md:text-lg leading-relaxed">
-          I’m a <span className="font-semibold text-cyan-400">full-stack developer</span> focused on building fast, reliable, and beautiful web applications.
+          I’m a <span className="font-semibold text-cyan-400">full-stack developer</span> passionate about crafting high-performance, scalable, and visually stunning web applications.
         </p>
         <p className="text-base md:text-lg text-gray-400 leading-relaxed">
-          My core stack is <span className="text-white font-medium">MERN</span> — MongoDB, Express, React, and Node.js. I enjoy using tools like{" "}
-          <span className="text-white">Redux, TailwindCSS, and Framer Motion</span> to craft modern UIs and seamless experiences.
+          My core stack is <span className="text-white font-medium">MERN</span> — MongoDB, Express, React, and Node.js — powered with{" "}
+          <span className="text-white">Redux, TailwindCSS, and Framer Motion</span> for modern, dynamic interfaces.
         </p>
       </motion.section>
 
+      {/* Recent Work */}
       <motion.section
         className="space-y-3 mt-6 border-l-4 border-cyan-500 pl-4"
         initial={{ opacity: 0, y: 10 }}
@@ -47,10 +51,15 @@ export default function About({ openFile, setActiveTab, openTabs }) {
       >
         <h2 className="text-2xl font-semibold text-white">🔧 Recent Work</h2>
         <p className="text-base text-gray-400 leading-relaxed">
-          I recently built <span className="text-white font-semibold">DineFlow</span> — a real-time restaurant management system. It enables customers to order via QR codes, helps kitchen staff track orders, and gives admins full control over dine-in operations.
+          Recently, I built <span className="text-white font-semibold">Mahavir Studio</span> — an e-commerce platform for selling premium hardware products. 
+          It features a modern product catalog, secure checkout, and responsive design for a seamless shopping experience.
+        </p>
+        <p className="text-base text-gray-400 leading-relaxed">
+          I also developed <span className="text-white font-semibold">DineFlow</span>, a real-time restaurant management system enabling QR-code ordering, kitchen order tracking, and complete admin control over operations.
         </p>
       </motion.section>
 
+      {/* What Drives Me */}
       <motion.section
         className="space-y-3 mt-6"
         initial={{ opacity: 0, y: 10 }}
@@ -59,11 +68,13 @@ export default function About({ openFile, setActiveTab, openTabs }) {
       >
         <h2 className="text-2xl font-semibold text-white">🚀 What Drives Me</h2>
         <p className="text-base text-gray-400 leading-relaxed">
-          I learn best by building. I’m currently diving deeper into <span className="text-white">animations, responsive design, and advanced backend patterns</span>.
-          This portfolio is part of that journey — built from scratch to reflect who I am as a developer.
+          I learn best by building. My focus right now is mastering{" "}
+          <span className="text-white">complex animations, responsive UI patterns, and robust backend architectures</span>.
+          This portfolio reflects my journey — hand-crafted to represent who I am as a developer.
         </p>
       </motion.section>
 
+      {/* Closing */}
       <motion.section
         className="pt-6"
         initial={{ opacity: 0, y: 10 }}

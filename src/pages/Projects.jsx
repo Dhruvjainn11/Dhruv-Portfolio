@@ -3,6 +3,34 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
   {
+    title: "Mahavir Studio",
+    description:
+      "A sophisticated e-commerce platform for paints and hardware built with Next.js 15, featuring a modern design, interactive UI, and robust backend API integration.",
+    features: [
+      "🛍️ Product browsing with category filters & search",
+      "📦 Cart and checkout with secure payment integration",
+      "👤 User authentication & role-based admin panel",
+      "📊 Sales analytics dashboard",
+      "📄 Invoice PDF generation",
+      "⚡ Highly optimized with Next.js 15 & Turbopack",
+    ],
+    tech: [
+      "Next.js 15",
+      "TailwindCSS",
+      "Framer Motion",
+      "Zustand",
+      "TanStack Query",
+      "Axios",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Multer",
+      "JWT Auth",
+    ],
+    github: "https://github.com/Dhruvjainn11/MahavirStudio",
+    live: "https://mahavir-studio.vercel.app/",
+  },
+  {
     title: "DineFlow",
     description:
       "A real-time restaurant management platform built using the MERN stack, tailored for seamless dine-in experiences.",
@@ -14,7 +42,7 @@ const projects = [
     ],
     tech: ["React", "Redux", "Node.js", "MongoDB", "Socket.IO", "TailwindCSS"],
     github: "https://github.com/Dhruvjainn11/dineflow",
-    live: "", // optional
+    live: "",
   },
 ];
 
@@ -27,8 +55,8 @@ export default function Projects() {
       transition={{ duration: 0.6 }}
     >
       <h1 className="text-3xl font-bold text-white mb-6 text-center">
-  🚀 My Projects
-</h1>
+        🚀 My Projects
+      </h1>
 
       {projects.map((project, index) => (
         <motion.div
@@ -36,7 +64,9 @@ export default function Projects() {
           whileHover={{ scale: 1.01 }}
           className="rounded-lg border border-gray-700 bg-[#1e1e1e]/80 p-6 shadow-inner backdrop-blur-md transition-all duration-300 group"
         >
-          <h2 className="text-xl font-semibold text-white mb-2">{project.title}</h2>
+          <h2 className="text-xl font-semibold text-white mb-2">
+            {project.title}
+          </h2>
 
           <p className="text-gray-400 text-sm mb-4 leading-relaxed">
             {project.description}
