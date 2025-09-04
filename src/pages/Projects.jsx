@@ -30,20 +30,23 @@ const projects = [
     github: "https://github.com/Dhruvjainn11/MahavirStudio",
     live: "https://mahavir-studio.vercel.app/",
   },
-  {
-    title: "DineFlow",
-    description:
-      "A real-time restaurant management platform built using the MERN stack, tailored for seamless dine-in experiences.",
-    features: [
-      "📱 QR-based ordering interface",
-      "👨‍🍳 Kitchen dashboard with live order tracking",
-      "🧾 Admin panel for managing tables, menus, and payments",
-      "🔌 Real-time updates using Socket.IO",
-    ],
-    tech: ["React", "Redux", "Node.js", "MongoDB", "Socket.IO", "TailwindCSS"],
-    github: "https://github.com/Dhruvjainn11/dineflow",
-    live: "",
-  },
+ {
+  title: "Annsh",
+  description:
+    "A smart digital menu and restaurant management platform built using the MERN stack, designed for cafes and restaurants.",
+  features: [
+    "📱 QR-based digital menu & ordering",
+    "👨‍🍳 Kitchen dashboard with real-time order tracking",
+    "🧾 Admin panel for managing tables, menus, and payments",
+    "🔌 Live updates powered by Socket.IO",
+  ],
+  tech: ["React", "Redux", "Node.js", "MongoDB", "Socket.IO",  "TailwindCSS",
+      "Framer Motion",  "Axios",   "Multer",
+      "JWT Auth","Express"],
+  github: "https://github.com/Dhruvjainn11/dineflow",
+  live: "https://annsh.in",
+},
+
 ];
 
 export default function Projects() {

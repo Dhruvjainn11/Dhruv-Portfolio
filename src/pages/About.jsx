@@ -44,20 +44,21 @@ export default function About({ openFile, setActiveTab, openTabs }) {
 
       {/* Recent Work */}
       <motion.section
-        className="space-y-3 mt-6 border-l-4 border-cyan-500 pl-4"
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-      >
-        <h2 className="text-2xl font-semibold text-white">🔧 Recent Work</h2>
-        <p className="text-base text-gray-400 leading-relaxed">
-          Recently, I built <span className="text-white font-semibold">Mahavir Studio</span> — an e-commerce platform for selling premium hardware products. 
-          It features a modern product catalog, secure checkout, and responsive design for a seamless shopping experience.
-        </p>
-        <p className="text-base text-gray-400 leading-relaxed">
-          I also developed <span className="text-white font-semibold">DineFlow</span>, a real-time restaurant management system enabling QR-code ordering, kitchen order tracking, and complete admin control over operations.
-        </p>
-      </motion.section>
+  className="space-y-3 mt-6 border-l-4 border-cyan-500 pl-4"
+  initial={{ opacity: 0, y: 10 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.2 }}
+>
+  <h2 className="text-2xl font-semibold text-white">🔧 Recent Work</h2>
+  <p className="text-base text-gray-400 leading-relaxed">
+    Recently, I built <span className="text-white font-semibold">Annsh</span> — a smart restaurant management system with QR-code digital menus, real-time kitchen order tracking, and an admin panel for managing tables, menus, and payments.
+  </p>
+  <p className="text-base text-gray-400 leading-relaxed">
+    I also developed <span className="text-white font-semibold">Mahavir Studio</span>, an e-commerce platform for selling premium hardware & paint products. 
+    It features a modern product catalog, wishlist, cart, AI-powered color suggestions, secure checkout, and responsive design for a seamless shopping experience.
+  </p>
+</motion.section>
+
 
       {/* What Drives Me */}
       <motion.section
