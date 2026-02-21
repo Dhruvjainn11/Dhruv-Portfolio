@@ -137,7 +137,7 @@ const [statusType, setStatusType] = useState("success");  // "success" or "error
         </a>
 
         <a
-          href="https://www.linkedin.com/in/dhruv-jain-683029285"
+          href="https://www.linkedin.com/in/dhruv-jain-dev/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 hover:text-white transition-colors"
