@@ -3,6 +3,18 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
   {
+    title: "RBAC Backend",
+    description: "A robust Role-Based Access Control (RBAC) system built with Node.js, Express, and both MySQL and MongoDB. This project provides a flexible and secure backend for managing user roles and permissions.",
+    features: [
+      "🔐 Secure user authentication with JWT.",
+      "👥 Role and permission management for users.",
+      "🔄 Support for both MySQL and MongoDB databases.",
+      "🚀 Scalable architecture for easy integration."
+    ],
+    tech: ["Node.js", "Express", "MySQL", "MongoDB", "JWT", "Backend"],
+    github: "https://github.com/Dhruvjainn11/AuthBackend.git"
+  },
+  {
     title: "Mahavir Studio",
     description:
       "A sophisticated e-commerce platform for paints and hardware built with Next.js 15, featuring a modern design, interactive UI, and robust backend API integration.",
@@ -30,23 +42,22 @@ const projects = [
     github: "https://github.com/Dhruvjainn11/MahavirStudio",
     live: "https://mahavir-studio.vercel.app/",
   },
- {
-  title: "Annsh",
-  description:
-    "A smart digital menu and restaurant management platform built using the MERN stack, designed for cafes and restaurants.",
-  features: [
-    "📱 QR-based digital menu & ordering",
-    "👨‍🍳 Kitchen dashboard with real-time order tracking",
-    "🧾 Admin panel for managing tables, menus, and payments",
-    "🔌 Live updates powered by Socket.IO",
-  ],
-  tech: ["React", "Redux", "Node.js", "MongoDB", "Socket.IO",  "TailwindCSS",
-      "Framer Motion",  "Axios",   "Multer",
-      "JWT Auth","Express"],
-  github: "https://github.com/Dhruvjainn11/dineflow",
-  live: "https://annsh.in",
-},
-
+  {
+    title: "Annsh",
+    description:
+      "A smart digital menu and restaurant management platform built using the MERN stack, designed for cafes and restaurants.",
+    features: [
+      "📱 QR-based digital menu & ordering",
+      "👨‍🍳 Kitchen dashboard with real-time order tracking",
+      "🧾 Admin panel for managing tables, menus, and payments",
+      "🔌 Live updates powered by Socket.IO",
+    ],
+    tech: ["React", "Redux", "Node.js", "MongoDB", "Socket.IO",  "TailwindCSS",
+        "Framer Motion",  "Axios",   "Multer",
+        "JWT Auth","Express"],
+    github: "https://github.com/Dhruvjainn11/dineflow",
+    live: "https://annsh.in",
+  }
 ];
 
 export default function Projects() {

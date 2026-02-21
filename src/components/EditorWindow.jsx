@@ -4,6 +4,7 @@ import About from "../pages/About";
 import Projects from "../pages/Projects";
 import Skills from "../pages/Skills";
 import Contact from "../pages/Contact";
+import Experience from "../pages/Experience";
 
 export default function EditorWindow({ activeTab ,openFile,openTabs,setActiveTab }) {
   return (
@@ -20,6 +21,19 @@ export default function EditorWindow({ activeTab ,openFile,openTabs,setActiveTab
           >
            <About openFile={openFile} openTabs={openTabs} setActiveTab={setActiveTab} />
 
+          </motion.div>
+        )}
+
+        {activeTab === "Experience.work" && (
+          <motion.div
+            key="experience"
+            id="Experience.work"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -30 }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
+          >
+            <Experience />
           </motion.div>
         )}
 

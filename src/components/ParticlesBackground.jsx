@@ -8,10 +8,8 @@ export default function ParticlesBackground() {
 
   useEffect(() => {
   initParticlesEngine(async (engine) => {
-    console.log("🔧 Initializing tsParticles engine...");
     await loadSlim(engine);
   }).then(() => {
-    console.log("✅ Engine initialized!");
     setInit(true);
   });
 }, []);
@@ -84,8 +82,6 @@ const options = useMemo(
   return (
     
     <div className="fixed inset-0 -z-10 bg-red ">
-      {console.log("✅ Particles component rendering")
-}
       <Particles id="tsparticles" options={options}/>
     </div>
   );

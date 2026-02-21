@@ -1,10 +1,11 @@
 // src/components/Sidebar.jsx
-import { FileText, Terminal, Mail, Layers } from "lucide-react";
+import { FileText, Terminal, Mail, Layers, Briefcase } from "lucide-react";
 import {motion} from 'framer-motion';
 
 export default function Sidebar({ openFile }) {
   const files = [
     { name: "Intro.me", icon: FileText },
+    { name: "Experience.work", icon: Briefcase },
     { name: "Stack.tools", icon: Terminal },
     { name: "Project.show", icon: Layers },
     { name: "Contact.connect", icon: Mail },

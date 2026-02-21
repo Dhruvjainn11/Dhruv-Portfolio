@@ -34,58 +34,48 @@ export default function About({ openFile, setActiveTab, openTabs }) {
         transition={{ duration: 0.6, delay: 0.1 }}
       >
         <p className="text-base md:text-lg leading-relaxed">
-          I’m a <span className="font-semibold text-cyan-400">full-stack developer</span> passionate about crafting high-performance, scalable, and visually stunning web applications.
+          I’m a <span className="font-semibold text-cyan-400">full-stack developer</span> passionate about crafting high-performance, scalable, and visually stunning web applications. My journey is fueled by a desire to turn complex problems into elegant, user-friendly solutions.
         </p>
         <p className="text-base md:text-lg text-gray-400 leading-relaxed">
-          My core stack is <span className="text-white font-medium">MERN</span> — MongoDB, Express, React, and Node.js — powered with{" "}
-          <span className="text-white">Redux, TailwindCSS, and Framer Motion</span> for modern, dynamic interfaces.
+          With hands-on experience as a Full Stack Intern, I've honed my skills in converting intricate Figma designs into responsive web pages, building robust Role-Based Access Control (RBAC) systems with both <span className="text-white font-medium">MySQL</span> and <span className="text-white font-medium">MongoDB</span>, and developing comprehensive order management systems. My core stack is <span className="text-white font-medium">MERN</span> — MongoDB, Express, React, and Node.js — complemented by <span className="text-white">Redux, TailwindCSS, and Framer Motion</span> for creating modern and dynamic interfaces.
         </p>
       </motion.section>
 
       {/* Recent Work */}
       <motion.section
-  className="space-y-3 mt-6 border-l-4 border-cyan-500 pl-4"
-  initial={{ opacity: 0, y: 10 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6, delay: 0.2 }}
->
-  <h2 className="text-2xl font-semibold text-white">🔧 Recent Work</h2>
-  <p className="text-base text-gray-400 leading-relaxed">
-    Recently, I built <span className="text-white font-semibold">Annsh</span> — a smart restaurant management system with QR-code digital menus, real-time kitchen order tracking, and an admin panel for managing tables, menus, and payments.
-  </p>
-  <p className="text-base text-gray-400 leading-relaxed">
-    I also developed <span className="text-white font-semibold">Mahavir Studio</span>, an e-commerce platform for selling premium hardware & paint products. 
-    It features a modern product catalog, wishlist, cart, AI-powered color suggestions, secure checkout, and responsive design for a seamless shopping experience.
-  </p>
-</motion.section>
-
-
-      {/* What Drives Me */}
-      <motion.section
-        className="space-y-3 mt-6"
+        className="space-y-4 mt-8"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.3 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
       >
-        <h2 className="text-2xl font-semibold text-white">🚀 What Drives Me</h2>
-        <p className="text-base text-gray-400 leading-relaxed">
-          I learn best by building. My focus right now is mastering{" "}
-          <span className="text-white">complex animations, responsive UI patterns, and robust backend architectures</span>.
-          This portfolio reflects my journey — hand-crafted to represent who I am as a developer.
-        </p>
+        <h2 className="text-2xl font-semibold text-white border-b border-gray-700 pb-2">🔧 Key Projects & Contributions</h2>
+        
+        <div className="space-y-4">
+          <div>
+            <h3 className="text-lg font-semibold text-cyan-400">Full-Featured RBAC System</h3>
+            <p className="text-base text-gray-400 leading-relaxed">
+              Engineered a comprehensive Role-Based Access Control (RBAC) system from the ground up, demonstrating my ability to design and implement critical security infrastructure. This project, built with Node.js and Express, supports both MySQL and MongoDB, showcasing my versatility in database management and backend architecture.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold text-cyan-400">E-commerce & Restaurant Management Systems</h3>
+            <p className="text-base text-gray-400 leading-relaxed">
+              Developed and contributed to multiple high-impact applications, including <span className="text-white">Annsh</span>, a real-time restaurant management platform, and <span className="text-white">Mahavir Studio</span>, a full-fledged e-commerce site. My work involved translating Figma designs into pixel-perfect UIs, implementing features like digital menus, order tracking, and secure payment gateways, and building scalable admin panels.
+            </p>
+          </div>
+        </div>
       </motion.section>
 
-      {/* Closing */}
       <motion.section
         className="pt-6"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.4 }}
       >
-        <p className="italic text-gray-500 border-t border-gray-700 pt-4">
-          “Great software is crafted — not just coded.” 🧠
+        <p className="text-base text-gray-400 leading-relaxed">
+          I am passionate about building solutions that are not only functional and scalable but also provide a seamless user experience. Let's connect and create something amazing together.
         </p>
-
         <button
           onClick={scrollToContact}
           className="inline-block mt-4 px-4 py-2 border border-cyan-400 hover:bg-cyan-500 hover:text-white text-cyan-400 rounded-lg transition"

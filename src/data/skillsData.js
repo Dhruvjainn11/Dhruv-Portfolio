@@ -17,6 +17,8 @@ export const skillsData = [
         { name: "Express.js", icon: "SiExpress", color: "text-gray-300" },
         { name: "MongoDB", icon: "SiMongodb", color: "text-green-400" },
         { name: "Mongoose", icon: "SiMongoose", color: "text-red-500" },
+        { name: "MySQL", icon: "SiMysql", color: "text-blue-500" },
+        { name: "Sequelize", icon: "SiSequelize", color: "text-sky-600" },
         { name: "JWT Auth", icon: "SiJsonwebtokens", color: "text-yellow-500" },
       ],
     },
